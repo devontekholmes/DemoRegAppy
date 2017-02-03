@@ -57,7 +57,7 @@ namespace DemoRegApp
             dotnet.addStudent(summer);
             dotnet.addStudent(kirk);
 
-
+            var studentlist = dotnet.GetStudentRoster();
             Console.ReadLine();
            
             /*

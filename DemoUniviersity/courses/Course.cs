@@ -122,8 +122,11 @@ namespace DemoUniviersity.Courses
 
         }
 
-        public List<Student> GetStudentRoster()
+        public async Task<List<Student>> GetStudentRoster()
         {
+            Console.WriteLine("Start Async");
+            var results = await FetchRoster();
+            Console.WriteLine("End Async");
             return studentRoster;
         }
 
